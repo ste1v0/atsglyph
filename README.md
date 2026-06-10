@@ -1,26 +1,60 @@
 # ATS Glyph
 
-Local-first ATS resume checker.
+**Local-first ATS resume checker for job seekers.**
+
+![License](https://img.shields.io/github/license/ste1v0/atsglyph)
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Local-first](https://img.shields.io/badge/local--first-yes-brightgreen)
+
+ATS Glyph helps you check a PDF CV against a job description, see what an ATS-style parser can read, get a practical fit score, and generate focused improvement suggestions using your own AI key.
+
+No account. No database. No subscription. Local-first and free.
 
 <img width="1758" height="1463" alt="app-preview" src="https://github.com/user-attachments/assets/c443044d-659d-4b77-872d-b42eca53f1b8" />
 
 <img width="2946" height="1708" alt="app-preview-2" src="https://github.com/user-attachments/assets/0edbce10-f972-4322-87e5-9e67ab1fe9d4" />
 
-You bring:
+## What you bring
 
-* PDF CV
-* job description
-* your AI key, a free Gemini key works too
+* a PDF CV
+* a job description
+* your AI key — a free Gemini key works too
 
-You get:
+## What you get
 
-* a quick 0-100 fit score
-* what an ATS-style PDF parser can read from your CV
-* 4 highest-impact fixes, not a 40-page audit
-* 14 CV checks across match, content, and structure
-* an okay cover letter draft with company and achievement context, with AI-sounding patterns cleaned up
+* a quick 0–100 fit score
+* an ATS-style parser check for your PDF
+* the 4 highest-impact fixes, not a 40-page audit
+* a full CV review across 14 areas
+* a cover letter draft based on the role, company context, and your achievements
+* cleaner writing suggestions without the usual AI-sounding patterns
 
-No account. No database. No subscription. All local and free.
+## Who it is for
+
+ATS Glyph is for job seekers who want to check one CV against one job before applying.
+
+It is especially useful when you want to:
+
+* see whether your PDF can be parsed correctly
+* understand which job requirements your CV misses
+* improve the highest-impact parts first
+* draft a less generic cover letter
+* keep your CV and API key local-first
+
+## Privacy model
+
+ATS Glyph is local-first:
+
+* no account
+* no hosted database
+* no subscription
+* your AI key is stored locally in your browser
+* optional achievement notes and usage logs stay in local files
+
+Important: when you run AI review features, your CV, job description, rendered PDF pages, and optional achievement notes are sent to the AI provider you configure.
+
+Check your provider’s data policy before uploading sensitive documents. Some free API providers may use submitted data to improve their models.
 
 ## Why
 
@@ -28,10 +62,12 @@ Applying for jobs is tedious and hard.
 
 Things that can go wrong:
 
-* your two, three, four column resume turns into soup, gradient skill bars included
+* your two, three, or four-column resume turns into soup, gradient skill bars included
 * the fit score lands your application in the red zone before a human even sees it
 * your CV is almost there, but misses one thing other candidates added
 * the role expects a cover letter, and yours says “I generated this in 12 seconds” a bit too loudly
+
+ATS Glyph does not pretend to know every company’s hiring system. It helps you catch practical problems that often hurt applications: unreadable PDFs, missing role keywords, weak evidence, unclear positioning, and generic cover letters.
 
 Useful background:
 
@@ -46,9 +82,9 @@ Paste CV text and a job description.
 
 Quick Score returns one number from 0 to 100:
 
-* 75+ means probably worth applying with light tailoring
-* 60-74 means possible, but fix the gaps in your CV first
-* below 60 means weak fit or a missing requirement, possibly not worth the time
+* **75+** means probably worth applying with light tailoring
+* **60–74** means possible, but fix the gaps in your CV first
+* **below 60** means weak fit or a missing requirement, possibly not worth the time
 
 It scores only what is in the CV. Achievements, if specified, are only used for suggestions.
 
@@ -69,7 +105,7 @@ If your CV looks broken here, maybe do not feed the same version to Ashby and ho
 
 ### Full Review
 
-The app checks your CV against the job description across 14 areas:
+The app checks your CV against the job description across 14 areas.
 
 **Match**
 
@@ -116,7 +152,9 @@ The app drafts a cover letter from:
 * private achievements, if you add them
 * your preferred tone: informal or formal
 
-Formal keeps the classic cover letter structure. Informal keeps it shorter, with a quick intro, precise bullets, and a simple close.
+Formal keeps the classic cover letter structure.
+
+Informal keeps it shorter, with a quick intro, precise bullets, and a simple close.
 
 It avoids the usual AI soup, yes, but please never send it blindly.
 
@@ -132,7 +170,7 @@ Example:
 - Migrated internal scripts from X to Y
 ```
 
-These would help the app suggest better CV bullets and cover letter examples.
+These notes help the app suggest better CV bullets and cover letter examples.
 
 They do not affect scoring unless you actually add them to your CV.
 
@@ -140,12 +178,21 @@ They do not affect scoring unless you actually add them to your CV.
 
 You want a tool that:
 
-* auto-applies to 500 jobs in a blink of an eye
+* auto-applies to 500 jobs in the blink of an eye
 * rewrites your whole CV while you look away
 * promises interviews
 * tells you to keyword-stuff everything
 
 Depending on your taste, sadly or thankfully, the app does none of that.
+
+## Tech stack
+
+* Next.js
+* React
+* TypeScript
+* PDF.js
+* Zod
+* OpenAI-compatible chat completions endpoint
 
 ## Run locally
 
@@ -158,7 +205,7 @@ Then run:
 
 ```bash
 git clone https://github.com/ste1v0/atsglyph.git
-cd ats-glyph
+cd atsglyph
 corepack enable pnpm
 pnpm install
 pnpm run dev
@@ -182,7 +229,7 @@ pnpm run dev
 
 ## Add an AI key
 
-Open the AI Endpoint tab.
+Open the **AI Endpoint** tab.
 
 For a simple Gemini setup:
 
@@ -201,11 +248,7 @@ gemini-3.5-flash
 
 4. Paste the key in the app.
 
-Check your provider’s data policy before uploading sensitive documents. Some free API providers may use submitted data to improve their models.
-
-Any OpenAI-compatible chat completions endpoint can work.
-
-Full Review needs a vision-capable model because it sends rendered PDF pages.
+Any OpenAI-compatible chat completions endpoint can work, but Full Analysis needs a vision-capable model since it sends rendered PDF pages.
 
 ## Local files
 
