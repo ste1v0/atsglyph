@@ -2,6 +2,8 @@
 
 Local-first ATS resume checker.
 
+<img width="1758" height="1463" alt="app-preview" src="https://github.com/user-attachments/assets/c443044d-659d-4b77-872d-b42eca53f1b8" />
+
 You bring:
 
 * PDF CV
