@@ -1,0 +1,32 @@
+{
+  "name": "ats-glyph",
+  "version": "0.1.0",
+  "description": "Local-first ATS resume checker with bring-your-own AI keys.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm run typecheck && pnpm run build"
+  },
+  "dependencies": {
+    "lucide-react": "^1.8.0",
+    "next": "^16.0.0",
+    "pdfjs-dist": "^5.4.624",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}
