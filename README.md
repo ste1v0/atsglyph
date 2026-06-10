@@ -165,7 +165,7 @@ Install:
 Then run:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/ste1v0/atsglyph.git
 cd ats-glyph
 corepack enable pnpm
 pnpm install
