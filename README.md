@@ -102,19 +102,7 @@ Each action includes:
 * estimated score impact range
 * one paste-ready example to adapt
 
-The app can use your private achievement notes for better examples, but not for scoring.
-
-### Core fixes
-
-The review focuses on things that usually move the needle:
-
-* missing required skills
-* weak proof for important experience
-* relevant work hidden too low
-* vague achievements
-* unclear seniority
-* poor keyword coverage
-* formatting that makes the CV harder to parse
+The app can use your achievement notes for better examples, but not for scoring.
 
 ### Cover letter draft
 
@@ -130,9 +118,9 @@ Formal keeps the classic cover letter structure. Informal keeps it shorter, with
 
 It avoids the usual AI soup, yes, but please never send it blindly.
 
-## Private achievements
+## Achievements
 
-You can add private notes under the Achievements tab or to `ACHIEVEMENTS.md`.
+You can add notes under the Achievements tab or to `ACHIEVEMENTS.md`.
 
 Example:
 
@@ -142,7 +130,7 @@ Example:
 - Migrated internal scripts from X to Y
 ```
 
-These notes help the app suggest better CV bullets and cover letter examples.
+These would help the app suggest better CV bullets and cover letter examples.
 
 They do not affect scoring unless you actually add them to your CV.
 
