@@ -9,17 +9,19 @@
 
 ATS Glyph helps you check a PDF CV against a job description, see what an ATS-style parser can read, get a practical fit score, and generate focused improvement suggestions using your own AI key.
 
-No account. No database. No subscription. Local-first and free.
+No account. No database. No subscription. Local-first with BYOK.
 
 <img width="2946" height="1708" alt="app-preview-2" src="https://github.com/user-attachments/assets/0edbce10-f972-4322-87e5-9e67ab1fe9d4" />
 
-## What you bring
+## What it does
+
+### You bring:
 
 * a PDF CV
 * a job description
-* your AI key — a free Gemini key works too
+* your own AI key — a free Gemini key works too
 
-## What you get
+### The app helps you to:
 
 * a quick 0–100 fit score
 * an ATS-style parser check for your PDF
@@ -27,32 +29,6 @@ No account. No database. No subscription. Local-first and free.
 * a full CV review across 14 areas
 * a cover letter draft based on the role, company context, and your achievements
 * cleaner writing suggestions without the usual AI-sounding patterns
-
-## Who it is for
-
-ATS Glyph is for job seekers who want to check one CV against one job before applying.
-
-It is especially useful when you want to:
-
-* see whether your PDF can be parsed correctly
-* understand which job requirements your CV misses
-* improve the highest-impact parts first
-* draft a less generic cover letter
-* keep your CV and API key local-first
-
-## Privacy model
-
-ATS Glyph is local-first:
-
-* no account
-* no hosted database
-* no subscription
-* your AI key is stored locally in your browser
-* optional achievement notes and usage logs stay in local files
-
-Important: when you run AI review features, your CV, job description, rendered PDF pages, and optional achievement notes are sent to the AI provider you configure.
-
-Check your provider’s data policy before uploading sensitive documents. Some free API providers may use submitted data to improve their models.
 
 ## Why
 
@@ -72,11 +48,27 @@ Useful background:
 * Reddit: [How 7 major ATS platforms use AI to screen your resume](https://www.reddit.com/r/jobhunting/comments/1ss6ym9/how_7_major_ats_platforms_use_ai_to_screen_your/)
 * Stanford HAI: [AI Hiring Tools Can Yield Racial Bias and Systemic Rejection](https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection)
 
-## What it does
+## Privacy model
 
-### Quick Score
+ATS Glyph is local-first:
 
-Paste CV text and a job description.
+* no account
+* no hosted database
+* no subscription
+* your AI key is stored locally in your browser
+* optional achievement notes and usage logs stay in local files
+
+Your CV, job description, rendered PDF pages, and optional achievement/company notes are sent to the AI provider you configure, so please check provider's data policy.
+
+## Parser check
+
+The app renders the uploaded PDF and checks what can actually be read.
+
+Useful for catching broken columns, icons, skill bars and other graphics read as nonsense.
+
+If your CV looks broken here, maybe do not feed the same version to Ashby and hope for the best.
+
+## Quick Score
 
 Quick Score returns one number from 0 to 100:
 
@@ -86,24 +78,9 @@ Quick Score returns one number from 0 to 100:
 
 It scores only what is in the CV. Achievements, if specified, are only used for suggestions.
 
-### Parser check
+## CV Analysis
 
-The app renders the uploaded PDF and checks what can actually be read.
-
-Useful for catching:
-
-* broken columns
-* missing sections
-* weird section order
-* icons read as nonsense
-* skill bars that say nothing
-* text trapped inside graphics
-
-If your CV looks broken here, maybe do not feed the same version to Ashby and hope for the best.
-
-### Full Review
-
-The app checks your CV against the job description across 14 areas.
+The app checks your CV against the JD across 14 areas.
 
 **Match**
 
@@ -140,7 +117,7 @@ Each action includes:
 
 The app can use your achievement notes for better examples, but not for scoring.
 
-### Cover letter draft
+## Cover letter draft
 
 The app drafts a cover letter from:
 
@@ -154,7 +131,7 @@ Formal keeps the classic cover letter structure.
 
 Informal keeps it shorter, with a quick intro, precise bullets, and a simple close.
 
-It avoids the usual AI soup, yes, but please never send it blindly.
+It avoids the usual AI soup, yes, but please never send it blindly and treat it as a plan.
 
 ## Achievements
 
@@ -176,7 +153,7 @@ They do not affect scoring unless you actually add them to your CV.
 
 You want a tool that:
 
-* auto-applies to 500 jobs in the blink of an eye
+* auto-applies to 500 jobs
 * rewrites your whole CV while you look away
 * promises interviews
 * tells you to keyword-stuff everything
