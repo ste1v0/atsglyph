@@ -23,12 +23,11 @@ No account. No database. No subscription. Local-first with BYOK.
 
 ### The app helps you:
 
-* a quick 0–100 fit score
-* an ATS-style parser check for your PDF
-* the 4 highest-impact fixes, not a 40-page audit
-* a full CV review across 14 areas
-* a cover letter draft based on the role, company context, and your achievements
-* cleaner writing suggestions without the usual AI-sounding patterns
+* check whether your PDF is parsed correctly
+* get a quick 0–100 fit score
+* find the 4 highest-impact fixes
+* get a full CV review across 14 areas
+* draft a cover letter based on the role, company context, tone, and your achievements, without obvious AI patterns
 
 ## Why
 
