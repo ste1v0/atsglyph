@@ -1,6 +1,6 @@
 # ATS Glyph
 
-**Local-first ATS resume checker for job seekers.**
+**Local-first ATS-style resume simulator for job seekers.**
 
 ![License](https://img.shields.io/github/license/ste1v0/atsglyph)
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
@@ -21,7 +21,7 @@ No account. No database. No subscription. Local-first with BYOK.
 * a job description
 * your own AI key — a free Gemini key works too
 
-### The app helps you to:
+### The app helps you:
 
 * a quick 0–100 fit score
 * an ATS-style parser check for your PDF
