@@ -40,7 +40,7 @@ Things that can go wrong:
 * your CV is almost there, but misses one thing other candidates added
 * the role expects a cover letter, and yours says “I generated this in 12 seconds” a bit too loudly
 
-ATS Glyph does not pretend to know every company’s hiring system. It helps you catch practical problems that often hurt applications: unreadable PDFs, missing role keywords, weak evidence, unclear positioning, and generic cover letters.
+The app doesn't claim to know how every company or ATS ranks candidates, it simply helps catch practical, fixable issues that can hurt an application early.
 
 Useful background:
 
